@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+<script src="jquery.js"></script>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Jquery Exercice 1</title>
   </head>
   <body>
@@ -14,20 +16,16 @@
     <button id="bouton1" name="bouton">Cacher</button>
     <button id="bouton2" name="bouton">Montrer</button>
 
-<p>push !!!!</p>
-  <script src="jqwery.js">
 
-  $(document).ready(function()
-  {
-      $("#hide").click(function()
-      {
-          $("p").hide();
-      });
-      $("#show").click(function(){
-          $("p").show();
-      });
-  });
-  </script>
+    <script>
+    $("#bouton1").click(function() {
+    $("#texte").hide();
+    });
+    $("#bouton2").click(function() {
+    $("#texte").show();
+    });
+    </script>
+
 
   </body>
 </html>

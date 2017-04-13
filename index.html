@@ -14,9 +14,19 @@
     <button id="bouton1" name="bouton">Cacher</button>
     <button id="bouton2" name="bouton">Montrer</button>
 
+<p>push !!!!</p>
+  <script src="jqwery.js">
 
-  <script>
-      <!-- Votre code jquery ici -->
+  $(document).ready(function()
+  {
+      $("#hide").click(function()
+      {
+          $("p").hide();
+      });
+      $("#show").click(function(){
+          $("p").show();
+      });
+  });
   </script>
 
   </body>
